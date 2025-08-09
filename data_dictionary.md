@@ -1,0 +1,446 @@
+# Diabetic Data – Semantic Layer
+
+- Rows: 101766
+- Columns: 50
+
+## Columns
+
+### encounter_id
+- dtype: int64
+- description: Unique identifier for a hospital encounter (visit).
+- synonyms: —
+- missing values: 0
+
+
+
+### patient_nbr
+- dtype: int64
+- description: Unique identifier for a patient across encounters.
+- synonyms: —
+- missing values: 0
+
+
+
+### race
+- dtype: object
+- description: Patient's race as recorded in the hospital system.
+- synonyms: —
+- missing values: 0
+
+
+
+### gender
+- dtype: object
+- description: Patient's gender (e.g., Male, Female, Unknown/Invalid).
+- synonyms: —
+- missing values: 0
+
+
+
+### age
+- dtype: object
+- description: Age group bracket of the patient (e.g., [70-80)).
+- synonyms: —
+- missing values: 0
+
+
+
+### weight
+- dtype: object
+- description: Patient weight bracket if recorded; often missing.
+- synonyms: —
+- missing values: 0
+
+
+
+### admission_type_id
+- dtype: int64
+- description: Numeric code indicating type of admission (e.g., emergency, urgent).
+- synonyms: —
+- missing values: 0
+
+
+
+### discharge_disposition_id
+- dtype: int64
+- description: Numeric code indicating discharge status (e.g., home, transfer, deceased).
+- synonyms: —
+- missing values: 0
+
+
+
+### admission_source_id
+- dtype: int64
+- description: Numeric code indicating where the patient was admitted from (e.g., referral, ER).
+- synonyms: —
+- missing values: 0
+
+
+
+### time_in_hospital
+- dtype: int64
+- description: Length of stay in days for the encounter.
+- synonyms: length_of_stay, los, stay
+- missing values: 0
+
+
+
+### payer_code
+- dtype: object
+- description: Code for the primary payment source/insurer.
+- synonyms: payer
+- missing values: 0
+
+
+
+### medical_specialty
+- dtype: object
+- description: Primary specialty of the admitting physician/service.
+- synonyms: specialty
+- missing values: 0
+
+
+
+### num_lab_procedures
+- dtype: int64
+- description: Count of lab tests performed during the encounter.
+- synonyms: labs
+- missing values: 0
+
+
+
+### num_procedures
+- dtype: int64
+- description: Count of procedures (excluding lab tests) performed.
+- synonyms: procedures
+- missing values: 0
+
+
+
+### num_medications
+- dtype: int64
+- description: Number of distinct medications administered.
+- synonyms: meds
+- missing values: 0
+
+
+
+### number_outpatient
+- dtype: int64
+- description: Number of outpatient visits in the year before the encounter.
+- synonyms: outpatient_visits
+- missing values: 0
+
+
+
+### number_emergency
+- dtype: int64
+- description: Number of emergency visits in the year before the encounter.
+- synonyms: er_visits
+- missing values: 0
+
+
+
+### number_inpatient
+- dtype: int64
+- description: Number of inpatient visits in the year before the encounter.
+- synonyms: inpatient_visits
+- missing values: 0
+
+
+
+### diag_1
+- dtype: object
+- description: Primary diagnosis code (ICD-9).
+- synonyms: primary_dx
+- missing values: 0
+
+
+
+### diag_2
+- dtype: object
+- description: Secondary diagnosis code (ICD-9).
+- synonyms: secondary_dx
+- missing values: 0
+
+
+
+### diag_3
+- dtype: object
+- description: Additional diagnosis code (ICD-9).
+- synonyms: tertiary_dx
+- missing values: 0
+
+
+
+### number_diagnoses
+- dtype: int64
+- description: Total number of diagnosis codes recorded for the encounter.
+- synonyms: —
+- missing values: 0
+
+
+
+### max_glu_serum
+- dtype: object
+- description: Result for maximum glucose serum test: None, Norm, >200, >300.
+- synonyms: glucose
+- missing values: 0
+
+- values:
+
+  - None: Not measured
+
+  - Norm: Normal
+
+  - >200: Greater than 200 mg/dL
+
+  - >300: Greater than 300 mg/dL
+
+
+
+### A1Cresult
+- dtype: object
+- description: Hemoglobin A1c test result: None, Norm, >7, >8.
+- synonyms: a1c
+- missing values: 0
+
+- values:
+
+  - None: Not measured
+
+  - Norm: Normal (~ < 6.5%)
+
+  - >7: Greater than 7%
+
+  - >8: Greater than 8%
+
+
+
+### metformin
+- dtype: object
+- description: Medication status for metformin (No, Steady, Up, Down).
+- synonyms: —
+- missing values: 0
+
+
+
+### repaglinide
+- dtype: object
+- description: Medication status for repaglinide (No, Steady, Up, Down).
+- synonyms: —
+- missing values: 0
+
+
+
+### nateglinide
+- dtype: object
+- description: Medication status for nateglinide (No, Steady, Up, Down).
+- synonyms: —
+- missing values: 0
+
+
+
+### chlorpropamide
+- dtype: object
+- description: Medication status for chlorpropamide (No, Steady, Up, Down).
+- synonyms: —
+- missing values: 0
+
+
+
+### glimepiride
+- dtype: object
+- description: Medication status for glimepiride (No, Steady, Up, Down).
+- synonyms: —
+- missing values: 0
+
+
+
+### acetohexamide
+- dtype: object
+- description: Medication status for acetohexamide (No, Steady, Up, Down).
+- synonyms: —
+- missing values: 0
+
+
+
+### glipizide
+- dtype: object
+- description: Medication status for glipizide (No, Steady, Up, Down).
+- synonyms: —
+- missing values: 0
+
+
+
+### glyburide
+- dtype: object
+- description: Medication status for glyburide (No, Steady, Up, Down).
+- synonyms: —
+- missing values: 0
+
+
+
+### tolbutamide
+- dtype: object
+- description: Medication status for tolbutamide (No, Steady, Up, Down).
+- synonyms: —
+- missing values: 0
+
+
+
+### pioglitazone
+- dtype: object
+- description: Medication status for pioglitazone (No, Steady, Up, Down).
+- synonyms: —
+- missing values: 0
+
+
+
+### rosiglitazone
+- dtype: object
+- description: Medication status for rosiglitazone (No, Steady, Up, Down).
+- synonyms: —
+- missing values: 0
+
+
+
+### acarbose
+- dtype: object
+- description: Medication status for acarbose (No, Steady, Up, Down).
+- synonyms: —
+- missing values: 0
+
+
+
+### miglitol
+- dtype: object
+- description: Medication status for miglitol (No, Steady, Up, Down).
+- synonyms: —
+- missing values: 0
+
+
+
+### troglitazone
+- dtype: object
+- description: Medication status for troglitazone (No, Steady, Up, Down).
+- synonyms: —
+- missing values: 0
+
+
+
+### tolazamide
+- dtype: object
+- description: Medication status for tolazamide (No, Steady, Up, Down).
+- synonyms: —
+- missing values: 0
+
+
+
+### examide
+- dtype: object
+- description: Medication status for examide (No, Steady, Up, Down).
+- synonyms: —
+- missing values: 0
+
+
+
+### citoglipton
+- dtype: object
+- description: Medication status for citoglipton (No, Steady, Up, Down).
+- synonyms: —
+- missing values: 0
+
+
+
+### insulin
+- dtype: object
+- description: Medication status for insulin (No, Steady, Up, Down).
+- synonyms: —
+- missing values: 0
+
+
+
+### glyburide-metformin
+- dtype: object
+- description: Medication status for combined glyburide-metformin (No, Steady, Up, Down).
+- synonyms: —
+- missing values: 0
+
+
+
+### glipizide-metformin
+- dtype: object
+- description: Medication status for combined glipizide-metformin (No, Steady, Up, Down).
+- synonyms: —
+- missing values: 0
+
+
+
+### glimepiride-pioglitazone
+- dtype: object
+- description: Medication status for combined glimepiride-pioglitazone (No, Steady, Up, Down).
+- synonyms: —
+- missing values: 0
+
+
+
+### metformin-rosiglitazone
+- dtype: object
+- description: Medication status for combined metformin-rosiglitazone (No, Steady, Up, Down).
+- synonyms: —
+- missing values: 0
+
+
+
+### metformin-pioglitazone
+- dtype: object
+- description: Medication status for combined metformin-pioglitazone (No, Steady, Up, Down).
+- synonyms: —
+- missing values: 0
+
+
+
+### change
+- dtype: object
+- description: Indicates if there was a change in diabetes medication (Ch or No).
+- synonyms: —
+- missing values: 0
+
+- values:
+
+  - Ch: Medication changed
+
+  - No: No change
+
+
+
+### diabetesMed
+- dtype: object
+- description: Indicates if any diabetes medication was prescribed (Yes/No).
+- synonyms: —
+- missing values: 0
+
+- values:
+
+  - Yes: On diabetes medication
+
+  - No: Not on diabetes medication
+
+
+
+### readmitted
+- dtype: object
+- description: Readmission indicator: NO, <30, >30 (days).
+- synonyms: readmission
+- missing values: 0
+
+- values:
+
+  - NO: Not readmitted within 30 days
+
+  - <30: Readmitted within 30 days
+
+  - >30: Readmitted after 30 days
+
+
