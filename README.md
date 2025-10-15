@@ -1,5 +1,3 @@
-<img width="200" height="200" alt="463395010-2204bb58-c11a-42b9-90b0-3f4870b8faf7" src="https://github.com/user-attachments/assets/932caf31-0b62-4775-bef6-4d8d7f0530bf" />
-
 
 # Interactive Data Analysis on Hospital Diabetes Dataset using Semantic Layer & LLM
 
